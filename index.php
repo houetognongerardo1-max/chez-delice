@@ -55,8 +55,8 @@ $today = date('Y-m-d');
 <main id="top">
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero__pattern" aria-hidden="true"></div>
+  <section class="hero" style="background-image: url('assets/images/hero.jpg')">
+    <div class="hero__overlay" aria-hidden="true"></div>
     <div class="container hero__inner">
       <p class="eyebrow">Restaurant · Cotonou, Bénin</p>
       <h1>Une cuisine qui raconte <span class="text-accent">une histoire</span></h1>
@@ -68,14 +68,6 @@ $today = date('Y-m-d');
         <a href="#reservation" class="btn btn--primary">Réserver une table</a>
         <a href="#menu" class="btn btn--ghost">Découvrir le menu</a>
       </div>
-    </div>
-    <div class="hero__plate" aria-hidden="true">
-      <svg viewBox="0 0 200 200" fill="none">
-        <circle cx="100" cy="100" r="98" stroke="currentColor" stroke-width="1.5" opacity="0.35"/>
-        <circle cx="100" cy="100" r="72" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
-        <path d="M70 60v40a12 12 0 0 0 12 12v28M70 60v24M78 60v24M62 60v24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-        <path d="M130 60c-8 0-14 10-14 24s6 22 14 26v30" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
     </div>
   </section>
 

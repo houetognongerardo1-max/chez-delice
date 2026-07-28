@@ -103,21 +103,19 @@ h1, h2, h3 { font-family: var(--ff-heading); line-height: 1.2; }
 .btn--block { width: 100%; }
 
 /* ============ Hero ============ */
-.hero { position: relative; padding-block: clamp(70px, 12vw, 130px); overflow: hidden; }
-.hero__pattern {
-  position: absolute; inset: 0; opacity: .5;
-  background-image: radial-gradient(circle, rgba(209,160,84,0.18) 1.5px, transparent 1.5px);
-  background-size: 26px 26px;
+.hero {
+  position: relative; padding-block: clamp(90px, 16vw, 160px); overflow: hidden;
+  background-size: cover; background-position: center; color: #f3ece1;
+}
+.hero__overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(100deg, rgba(10,8,6,0.92) 0%, rgba(10,8,6,0.78) 45%, rgba(10,8,6,0.45) 100%);
 }
 .hero__inner { position: relative; max-width: 680px; }
 .eyebrow { display: inline-block; color: var(--accent); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: 0.82rem; margin-bottom: 18px; }
-.hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 700; margin-bottom: 20px; }
-.hero__desc { color: var(--text-muted); font-size: 1.05rem; margin-bottom: 30px; max-width: 520px; }
+.hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 700; margin-bottom: 20px; color: #f3ece1; }
+.hero__desc { color: #d8cdbf; font-size: 1.05rem; margin-bottom: 30px; max-width: 520px; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 14px; }
-.hero__plate {
-  position: absolute; right: -60px; top: 50%; transform: translateY(-50%);
-  width: min(420px, 40vw); color: var(--accent); opacity: .5; pointer-events: none;
-}
 
 /* ============ About ============ */
 .about__grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
@@ -237,7 +235,6 @@ h1, h2, h3 { font-family: var(--ff-heading); line-height: 1.2; }
   .nav__list { flex-direction: column; gap: 4px; }
   .nav__list a { display: block; padding: 12px 14px; }
   .nav-toggle { display: flex; }
-  .hero__plate { display: none; }
   .about__grid, .reservation__grid, .contact__grid { grid-template-columns: 1fr; }
   .feature-grid { grid-template-columns: 1fr 1fr; }
   .form-row--split { grid-template-columns: 1fr; }
