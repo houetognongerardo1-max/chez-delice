@@ -1,0 +1,33 @@
+.admin-body { background: var(--bg-alt); min-height: 100vh; }
+
+.admin-login {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px;
+}
+.admin-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 36px; width: min(380px, 100%); display: grid; gap: 16px;
+}
+.admin-card h1 { font-size: 1.5rem; margin-bottom: 8px; }
+.admin-back-link { text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-top: 6px; }
+.admin-back-link:hover { color: var(--accent); }
+
+.admin-header { border-bottom: 1px solid var(--border); padding-block: 16px; background: var(--bg); }
+.admin-header__inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.admin-header__user { display: flex; align-items: center; gap: 14px; font-size: 0.88rem; color: var(--text-muted); }
+
+.admin-main { padding-block: 48px; }
+.admin-empty { color: var(--text-muted); padding: 40px 0; text-align: center; }
+
+.admin-table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); }
+.admin-table { width: 100%; border-collapse: collapse; min-width: 720px; }
+.admin-table th, .admin-table td {
+  padding: 14px 16px; text-align: left; font-size: 0.88rem; border-bottom: 1px solid var(--border);
+}
+.admin-table th { color: var(--accent); text-transform: uppercase; letter-spacing: .04em; font-size: 0.75rem; background: var(--surface); }
+.admin-table tbody tr:hover { background: var(--surface); }
+
+.admin-delete-btn {
+  width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--border); color: var(--danger);
+  transition: background-color .2s ease, border-color .2s ease;
+}
+.admin-delete-btn:hover { background: color-mix(in srgb, var(--danger) 18%, transparent); border-color: var(--danger); }
