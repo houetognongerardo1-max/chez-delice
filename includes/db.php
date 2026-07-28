@@ -1,9 +1,15 @@
 <?php
 
-$host = '127.0.0.1';
-$db   = 'chez_delice';
-$user = 'root';
-$pass = '';
+$localConfig = __DIR__ . '/db.local.php';
+
+if (is_file($localConfig)) {
+    require $localConfig;
+} else {
+    $host = '127.0.0.1';
+    $db   = 'chez_delice';
+    $user = 'root';
+    $pass = '';
+}
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
